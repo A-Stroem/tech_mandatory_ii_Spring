@@ -1,0 +1,80 @@
+div {
+    border: 1px solid black;
+}
+h1{
+    padding: 20px;
+    height: 100px;
+    color: green;
+    text-align: center;
+}
+
+#navlinks ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+    display: inline;
+}
+
+
+
+.container {
+    width: 100%;
+    border: orange;
+}
+
+.figureone {
+    border-radius: 10px;
+    height: 300px;
+    float: right;
+}
+
+.figuretwo {
+    border-radius: 10px;
+    height: 300px;
+    float: right;
+}
+
+.figurethree {
+    height: 300px;
+    border-radius: 10px;
+    float: right;
+}
+
+.figurefour {
+    height: 300px;
+    border-radius: 10px;
+    float: right;
+}
+
+.figurefive {
+    height: 300px;
+    border-radius: 10px;
+    float: right;
+}
+
+
+
+/*.left {
+    display:table-cell;
+    vertical-align:middle;
+    width:120px;
+    margin:0;
+    padding:0;
+    height:80px;
+    !*background-image:url(URL);*!
+    background-size:100%;
+}
+
+.right {
+    display:table-cell;
+    vertical-align:middle;
+    width:280px;
+    padding:0 10px;
+}*/
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+
+    <meta charset="UTF-8">
+    <title>The Bouncing Ball Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta
+            name="Bouncing Balls"
+            content="Bouncing Balls Project site">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_GB">
+    <meta name="description" content="Info about the bouncing balls project">
+    <meta name="author" content="Monika Ozdoba">
+    <meta name="author" content="Anders Strøm">
+    <meta name="author" content="Wanesa Wintmiller">
+
+    <style>
+        img {
+            border-radius: 10px;
+        }
+
+        #poke-table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #poke-table td, #poke-table th {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        #poke-table tr:nth-child(even) {
+            background-color: #ddd;
+        }
+
+        #poke-table tr:hover {
+            background-color: #dddd;
+        }
+
+        #poke-table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #aa6804;
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" th:href="@{styles.css}">
+
+</head>
+<body>
+<nav id="navbar">
+    <div>
+        <a href="/">
+            <image id="logo" src="https://icon-library.com/images/bounce-icon/bounce-icon-26.jpg"></image>
+        </a>
+    </div>
+    <div id="navtext">
+        <p>Bouncing Ball Project</p>
+    </div>
+    <ul id="navlinks">
+        <li><a class="nav-link" href="/">Home</a></li>
+        <li><a class="nav-link" href="#section-project">Project Description</a></li>
+        <li><a class="nav-link" href="#section-download">Download</a></li>
+        <li><a class="nav-link" href="#section-pokemon">Pokemon</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="section-download">
+        <div class="container">
+            <p>Click here to download the project</p>
+            <a href="https://github.com/A-Stroem/tech_mandatory_ii_Spring/blob/main/Downloads/Mandatory_II_Wanesa.jar?raw=true"
+               target="_blank">Download</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+               target="_blank">YouTube</a>
+        </div>
+    </section>
+
+    <section id="section-project">
+        <div>
+            <h1>Our progress</h1>
+        </div>
+        <div class="container" id="figureone">
+            <img src="https://i.ibb.co/fvjM6PS/Running-Application.png" alt="Running-Application" class="figureone">
+
+            <div class="image-text">
+                <p>Text goes here</p>
+            </div>
+        </div>
+
+        <div class="container" id="figuretwo">
+            <img src="https://i.ibb.co/3hGMSF8/Check-Collision.png" alt="Check-Collision" class="figuretwo">
+
+            <div class="image-text">
+                <p>Text goes here</p>
+            </div>
+        </div>
+
+        <div class="container" id="figurethree">
+            <img src="https://i.ibb.co/bbZ1PgK/Negative-Step.png" alt="Negative-Step" class="figurethree">
+
+            <div class="image-text">
+                <p>Text goes here</p>
+            </div>
+
+        </div>
+        <div class="container" id="figurefour">
+            <img src="https://i.ibb.co/b674Rwp/Scene-Pane.png" alt="Scene-Pane" class="figurefour">
+
+            <div class="image-text">
+                <p>text goes here</p>
+            </div>
+        </div>
+
+        <div class="container" id="figurefive">
+            <img src="https://i.ibb.co/R2YVYRX/Run-Method.png" alt="Run-Method" class="figurefive">
+
+            <div class="image-text">
+                <p>text goes here</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="section-pokemon">
+        <div class="container" id="pokemon-title">
+            <h2>Pokemon Table</h2>
+            <table id="poke-table">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Image</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="pokemon : ${pokemons}">
+                    <td th:text="${pokemon.getId()}"></td>
+                    <td th:text="${pokemon.getName()}"></td>
+                    <td th:text="${pokemon.getType()}"></td>
+                    <td th:text="${pokemon.getImage_url()}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+
+</body>
+</html>
