@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>The Bouncing Ball Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta
+            name="Bouncing Balls"
+            content="Bouncing Balls Project site">
+    <!--    <meta property="og:url" content="https://d220427-tech-mandatory-ii.herokuapp.com">-->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_GB">
+    <meta name="description" content="Info about the bouncing balls project">
+    <meta name="author" content="Monika Ozdoba">
+    <meta name="author" content="Anders Strøm">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1>Our progress</h1>
+<div>
+    Click here to download the project.
+
+    <a href="https://github.com/A-Stroem/tech_mandatory_ii_Spring/blob/main/Downloads/Mandatory_II_Wanesa.jar?raw=true"
+       target="_blank">Download</a>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+       target="_blank">YouTube</a>
+
+</div>
+
+<div class="container">
+    <div class="left"><br>Figure 1</div>
+    <div class="right">
+        <figure>
+            <img src="https://i.ibb.co/fvjM6PS/Running-Application.png" alt="Running-Application" border="0"
+                 weight="350" height="300" style="float: right">
+        </figure>
+    </div>
+
+    <!--    <p><a href="https://ibb.co/vY01yKB"><img src="https://i.ibb.co/fvjM6PS/Running-Application.png" alt="Running-Application" border="0" style="float: right"></a> Running application</p>-->
+
+    <!--    <figure>-->
+    <!--        <img src="https://i.ibb.co/fvjM6PS/Running-Application.png" alt="Running-Application" border="0" weight="350" height="300" style="float: right">-->
+    <!--    </figure>-->
+
+</div>
+<!--    <p><a href="https://ibb.co/s3k6s1D"><img src="https://i.ibb.co/3hGMSF8/Check-Collision.png" alt="Check-Collision" border="0" style="float: right">></a>Check collision</p>-->
+<div class="container">
+    <div class="left"><br>Figure 2</div>
+    <div class="right">
+        <figure>
+            <img src="https://i.ibb.co/3hGMSF8/Check-Collision.png" alt="Check-Collision" weight="200" height="300"
+                 border="0" style="float: right">
+        </figure>
+        <p>fdsfsffsdfds</p>
+    </div>
+</div>
+<!--    <p><a href="https://ibb.co/fD5M2Yx"><img src="https://i.ibb.co/bbZ1PgK/Negative-Step.png" alt="Negative-Step" border="0" style="float: right">></a>Make the step negative</p>-->
+<div class="container">
+    <div class="left"><br>Figure 3</div>
+    <div class="right">
+        <figure>
+            <img src="https://i.ibb.co/bbZ1PgK/Negative-Step.png" alt="Negative-Step" weight="280" height="300"
+                 border="0" style="float: right">
+        </figure>
+    </div>
+</div>
+<!--    <p><a href="https://ibb.co/gr60Fqs"><img src="https://i.ibb.co/b674Rwp/Scene-Pane.png" alt="Scene-Pane" border="0" style="float: right">></a>Scene Pane</p>-->
+<div class="container">
+    <div class="left"><br>Figure 4</div>
+    <div class="right">
+        <figure>
+            <img src="https://i.ibb.co/b674Rwp/Scene-Pane.png" alt="Scene-Pane" weight="300" height="300"
+                 border="0" style="float: right">
+        </figure>
+    </div>
+</div>
+<div>
+    <!--    <p><a href="https://ibb.co/jhb1bnC"><img src="https://i.ibb.co/R2YVYRX/Run-Method.png" alt="Run-Method" border="0" style="float: right">></a>Run method</p>-->
+
+    <div class="container">
+        <div class="left"><br>Figure 5</div>
+        <div class="right">
+            <figure>
+                <img src="https://i.ibb.co/R2YVYRX/Run-Method.png" alt="Run-Method" weight="300"
+                     height="300" border="0" style="float: right">
+            </figure>
+        </div>
+    </div>
+</div>
+
+<section id="section-pokemon">
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Image</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="pokemon : ${pokemon}">
+            <td th:text="${pokemon.id}"/>
+            <td th:text="${pokemon.name}"/>
+            <td th:text="${pokemon.type}"/>
+            <td th:text="${pokemon.image_url}"/>
+        </tbody>
+    </table>
+
+</section>
+
+
+</body>
+</html>
